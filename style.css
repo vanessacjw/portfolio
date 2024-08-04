@@ -1,0 +1,115 @@
+
+
+:root {
+  --primary-color: #8667b7;
+  --secondary-color: rgb(251, 194, 242);
+  --text-colour: rgb(42, 27, 255);
+  --bg-colour: rgb(18, 1, 37);
+  --border-color: #27272a;
+  --card-bg: #22d3ee;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --border-radius: 8px;
+}
+
+/*Base styles*/
+* {
+    margin: 1.5;
+    padding: 4;
+    box-sizing:border-box;
+}
+
+
+body {
+    background-color: var(--bg-colour);
+}
+
+/*Typography*/
+header,
+h1,
+h2,
+h3 {
+    margin-bottom: var(--spacing-sm);
+}
+
+/*Header*/
+.title {
+    font-size:  1rem;
+    font-weight: 900;
+    text-decoration-thickness: 2px;
+    color: rgb(125, 255, 244);
+    text-align: center;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.body1{
+    font-family: 'ui-monospace';
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    line-height: 0.6;
+    color: var(--text-colour);
+    background-color: var(--secondary-color);
+	padding: var(--spacing-sm) 0;
+   
+}
+
+/* Navigation styles */
+.nav {
+	background-color: rgb(255, 141, 188);
+	padding: 0.125rem
+    color: whitesmoke;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	margin: 0 var(--spacing-sm);
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+    font-size: 20px
+}
+
+.content{
+    font-size: 1rem;
+    color: var(--secondary-color);
+    text-align: start;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    margin-top: 0.2rem;
+    margin-bottom: 0.25rem;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    overflow: hidden;
+    
+}
+/* Card styles for projects */
+.project-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: var(--spacing-md);
+}
+
+.project-card {
+	background-color: var(--card-bg);
+	border-radius: var(--border-radius);
+	padding: var(--spacing-md);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
